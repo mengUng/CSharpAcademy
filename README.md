@@ -15,10 +15,10 @@ Fonctionnalités :
 	- Ajout de transactions : Ajoutez différents types de transactions (Credit, Debit) dans le service.
 	- Validation des transactions : Chaque transaction suit ses propres règles de validation.
 	- Exécution des transactions : Valide et exécute toutes les transactions ajoutées.
-	- Gestion des données : Structure dédiée pour stocker les détails des transactions.
+	- Gestion des données : Structure dédiée pour stocker les détails des transactions. 
 
 Principales classes :
-    Donnees :
+    Donnees : 
         Représente les données associées à une transaction.
 
     ITransaction :
