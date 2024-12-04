@@ -16,4 +16,8 @@
             }
     }
 
+    public List<ITransaction> GetTransactions() 
+    { 
+        return _transactions;
+    }
 }

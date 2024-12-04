@@ -1,5 +1,6 @@
 namespace CSharpAcademy.TestsUnit
 {
+
     public class TransactionServiceTests
     {
         [Fact]
@@ -29,6 +30,21 @@ namespace CSharpAcademy.TestsUnit
             // Act & Assert
             Assert.Throws<ArgumentException>(() => service.AjouterTransaction(null));
         }
+
+        [Fact]
+        public void TransactionService_AjouterTransaction_TransactionAjoutee()
+        {
+            // Arrange
+            var service = new TransactionService();
+            var transaction = new Credit(new Donnees(DateTime.Now, 5000f, Type.Credit, "Crédit ajouté"));
+
+            // Act
+            service.AjouterTransaction(transaction);
+
+            // Assert
+            Assert.Contains(transaction, service.GetTransactions());
+        }
+
 
     }
 }
