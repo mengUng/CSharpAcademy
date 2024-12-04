@@ -18,6 +18,7 @@ Fonctionnalités :
 	- Gestion des données : Structure dédiée pour stocker les détails des transactions. 
 
 Principales classes :
+
     Donnees : 
         Représente les données associées à une transaction.
 
