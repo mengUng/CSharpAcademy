@@ -2,5 +2,6 @@
 public enum Type
 {
     Credit,
-    Debit
+    Debit,
+    Cloture
 }
